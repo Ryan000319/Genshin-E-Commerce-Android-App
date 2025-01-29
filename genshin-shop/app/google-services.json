@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1092509497203",
+    "project_id": "genshinshop-92fff",
+    "storage_bucket": "genshinshop-92fff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092509497203:android:4b0103265ff281af2e7706",
+        "android_client_info": {
+          "package_name": "com.example.genshin_shop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd-NW63ZKa4WlGhyBLcjzGuZ0j0bvm2Iw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

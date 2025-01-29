@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/moccasin">
+
+    <!-- Overall Analytics Section -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/overallStatsSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rating_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Section Title -->
+        <TextView
+            android:id="@+id/analyticsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Store Analytics Overview"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Total Products -->
+        <TextView
+            android:id="@+id/totalProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Products: 0"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/analyticsTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+
+        <!-- Total Income -->
+        <TextView
+            android:id="@+id/totalIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Income: RM0.00"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/totalProducts"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Completed Orders -->
+        <TextView
+            android:id="@+id/completedOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed Orders: 0"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/totalIncome"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Section Title for Spinner -->
+    <TextView
+        android:id="@+id/filterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter Products"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/overallStatsSection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Spinner for Product Filters -->
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rating_background"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/filterTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Section Title for RecyclerView -->
+    <TextView
+        android:id="@+id/productListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product List"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/categorySpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- RecyclerView for Products -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPopularProducts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rating_background"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/productListTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

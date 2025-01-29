@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/moccasin"
+    android:padding="16dp">
+
+    <!-- Order Information Card -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/orderInfoCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Order ID -->
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Order ID: #12345"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/order_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Address: 123 Street, City, Country"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/order_id"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Status Update Card -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/statusUpdateCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/orderInfoCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <!-- Order Status -->
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Pending"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Order Items Card -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/orderItemsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/card_background"
+        app:layout_constraintTop_toBottomOf="@id/statusUpdateCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <!-- Section Header -->
+        <TextView
+            android:id="@+id/orderItemsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Items"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp" />
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/orderItemsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/orderItemsHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Total Calculation Card -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/orderTotalBreakdownCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/card_background"
+        app:layout_constraintTop_toBottomOf="@id/orderItemsCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <!-- Subtotal -->
+        <TextView
+            android:id="@+id/order_subtotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Subtotal: RM0.00"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Shipping Costs -->
+        <TextView
+            android:id="@+id/order_shipping_cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Shipping: RM0.00"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/order_subtotal"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Coins Applied -->
+        <TextView
+            android:id="@+id/order_coins_applied"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Coins Applied: RM0.00"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/order_shipping_cost"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Total -->
+        <TextView
+            android:id="@+id/order_final_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total: RM0.00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/order_coins_applied"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Genshin Shop</string>
+    <string name="search">Search</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="see_discounts">See Discounts</string>
+    <string name="hello">Hello, </string>
+
+
+    <string-array name="product_categories">
+        <item>Plushies</item>
+        <item>Figurines</item>
+        <item>Clothing</item>
+        <item>Accessories</item>
+    </string-array>
+
+    <string-array name="sort_options">
+        <item>Sort by Name</item>
+        <item>Sort by Price</item>
+        <item>Sort by Category</item>
+    </string-array>
+
+    <string-array name="sort_order">
+        <item>Sort by Date (Newest)</item>
+        <item>Sort by Date (Oldest)</item>
+    </string-array>
+
+
+    <string name="order_id_placeholder">Order ID: %1$s</string>
+    <string name="total_placeholder">Total: $%1$.2f</string>
+    <string name="status_placeholder">Status: %1$s</string>
+
+    <!-- strings.xml -->
+    <!-- strings.xml -->
+    <string name="price_format">Price: RM%.2f</string>
+    <string name="rating_format">Rating: %.1f</string>
+    <string name="no_ratings">No ratings yet</string>
+
+    <!-- In strings.xml -->
+    <string name="subtotal_text">Subtotal: RM%.2f</string>
+    <string name="shipping_text">Shipping: RM%.2f</string>
+    <string name="coins_discount_text">Coins Discount: RM%.2f</string>
+    <string name="total_text">Total: RM%.2f</string>
+
+    <string name="welcome_text">Welcome Back!</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="avatar_description">Avatar Image</string>
+    <string name="email_icon_description">Email Icon</string>
+    <string name="password_icon_description">Password Icon</string>
+
+    <string name="exo_download_notification_channel_name">Downloads</string>
+
+
+</resources>

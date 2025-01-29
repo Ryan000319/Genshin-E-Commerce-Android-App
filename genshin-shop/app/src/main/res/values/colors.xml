@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Existing Pastel Colors -->
+    <color name="pastelBlue">#AEC6CF</color> <!-- Pastel Blue -->
+    <color name="pastelGreen">#77DD77</color> <!-- Pastel Green -->
+    <color name="pastelPink">#FFB7C5</color> <!-- Pastel Pink -->
+
+    <!-- Neutral Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Other Colors -->
+    <color name="primaryColor">#AEC6CF</color> <!-- Updated to Pastel Blue -->
+    <color name="secondaryColor">#77DD77</color> <!-- Updated to Pastel Green -->
+    <color name="accentColor1">#FFB7C5</color> <!-- Pastel Pink -->
+    <color name="accentColor2">#FFF5BA</color> <!-- Pastel Yellow -->
+    <color name="accentColor3">#CDA4DE</color> <!-- Pastel Purple -->
+    <color name="accentColor4">#FFB347</color> <!-- Pastel Orange -->
+
+    <!-- Fading Overlay Colors -->
+    <color name="fadingOverlayStart">#80AEC6CF</color> <!-- Semi-transparent Pastel Blue -->
+    <color name="fadingOverlayEnd">@android:color/transparent</color>
+
+    <!-- Additional Pastel Colors (Blues, Greens, and Yellows) -->
+    <color name="pastelSkyBlue">#87CEEB</color>
+    <color name="powderBlue">#B0E0E6</color>
+    <color name="babyBlue">#89CFF0</color>
+    <color name="lightCornflowerBlue">#93CCEA</color>
+    <color name="paleBlue">#AFEEEE</color>
+    <color name="aliceBlue">#F0F8FF</color>
+    <color name="mistyBlue">#B4C7D9</color>
+    <color name="lavenderBlue">#E3E4FA</color>
+    <color name="lightSteelBlue">#B0C4DE</color>
+    <color name="pastelTurquoise">#99CCCC</color>
+    <color name="pastelMintBlue">#CFECEC</color>
+    <color name="pastelAquamarine">#A1EAFB</color>
+    <color name="mintGreen">#98FF98</color>
+    <color name="honeydew">#F0FFF0</color>
+    <color name="paleGreen">#98FB98</color>
+    <color name="celadon">#ACE1AF</color>
+    <color name="teaGreen">#D0F0C0</color>
+    <color name="lightMint">#B2FBA5</color>
+    <color name="pastelOlive">#C8E6A4</color>
+    <color name="lightSeaGreen">#20B2AA</color>
+    <color name="pastelPeach">#FFDAB9</color> <!-- Pastel Peach -->
+    <color name="pastelButter">#FFFDD0</color> <!-- Pastel Butter -->
+    <color name="pastelHoney">#F3E5AB</color> <!-- Pastel Honey -->
+    <color name="lightGoldenrodYellow">#FAFAD2</color> <!-- Light Goldenrod Yellow -->
+    <color name="lemonChiffon">#FFFACD</color>
+    <color name="papayaWhip">#FFEFD5</color>
+    <color name="lightGoldenrod">#EEDD82</color>
+
+    <!-- Additional Red, Pink, and Purple Shades -->
+    <color name="babyPink">#FFB6C1</color>
+    <color name="lightPink">#FFB3DE</color>
+    <color name="lavenderPink">#FBAED2</color>
+    <color name="pinkLace">#FFDDF4</color>
+    <color name="thulianPink">#DE6FA1</color>
+    <color name="cottonCandy">#FFBCD9</color>
+    <color name="pastelRose">#FF6961</color> <!-- Pastel Rose -->
+    <color name="peachPink">#FFD1DC</color> <!-- Peach Pink -->
+    <color name="pastelBlush">#FDD7E4</color> <!-- Pastel Blush -->
+    <color name="lightSalmonPink">#FF9999</color> <!-- Light Salmon Pink -->
+    <color name="pastelRed">#FF6961</color> <!-- Pastel Red -->
+    <color name="pastelMagenta">#F49AC2</color> <!-- Pastel Magenta -->
+    <color name="lightCoralRed">#F08080</color> <!-- Light Coral Red -->
+    <color name="lavender">#E6E6FA</color>
+    <color name="thistle">#D8BFD8</color>
+    <color name="plum">#DDA0DD</color>
+    <color name="mauve">#E0B0FF</color>
+    <color name="orchid">#DA70D6</color>
+    <color name="periwinkle">#CCCCFF</color>
+    <color name="pastelLilac">#C8A2C8</color> <!-- Pastel Lilac -->
+    <color name="pastelWisteria">#C9A0DC</color> <!-- Pastel Wisteria -->
+    <color name="lightLavender">#EEDCFA</color> <!-- Light Lavender -->
+
+    <!-- Additional Red Shades -->
+    <color name="lightRed">#FF6666</color> <!-- Light Red -->
+    <color name="salmon">#FA8072</color> <!-- Salmon -->
+    <color name="crimson">#DC143C</color> <!-- Crimson -->
+    <color name="firebrick">#B22222</color> <!-- Firebrick -->
+    <color name="darkRed">#8B0000</color> <!-- Dark Red -->
+    <color name="indianRed">#CD5C5C</color> <!-- Indian Red -->
+    <color name="orangeRed">#FF4500</color> <!-- Orange Red -->
+    <color name="scarlet">#FF2400</color> <!-- Scarlet -->
+    <color name="rubyRed">#9B111E</color> <!-- Ruby Red -->
+    <color name="bloodRed">#660000</color> <!-- Blood Red -->
+
+    <!-- Additional Pink Shades -->
+    <color name="blushPink">#FE828C</color> <!-- Blush Pink -->
+    <color name="fuchsiaPink">#FF77FF</color> <!-- Fuchsia Pink -->
+    <color name="rosePink">#FF66CC</color> <!-- Rose Pink -->
+    <color name="hotPink">#FF69B4</color> <!-- Hot Pink -->
+    <color name="deepPink">#FF1493</color> <!-- Deep Pink -->
+    <color name="shockingPink">#FC0FC0</color> <!-- Shocking Pink -->
+    <color name="raspberryPink">#E30B5D</color> <!-- Raspberry Pink -->
+
+    <!-- Additional Purple Shades -->
+    <color name="violet">#EE82EE</color> <!-- Violet -->
+    <color name="purpleHeart">#69359C</color> <!-- Purple Heart -->
+    <color name="heliotrope">#DF73FF</color> <!-- Heliotrope -->
+    <color name="royalPurple">#7851A9</color> <!-- Royal Purple -->
+    <color name="mediumPurple">#9370DB</color> <!-- Medium Purple -->
+    <color name="blueViolet">#8A2BE2</color> <!-- Blue Violet -->
+    <color name="amethyst">#9966CC</color> <!-- Amethyst -->
+    <color name="mulberry">#C54B8C</color> <!-- Mulberry -->
+
+    <!-- Additional Gold and Yellow Shades -->
+    <color name="gold">#FFD700</color> <!-- Gold -->
+    <color name="paleGold">#E6BE8A</color> <!-- Pale Gold -->
+    <color name="lightGold">#F3E5AB</color> <!-- Light Gold -->
+    <color name="pastelAmber">#FFBF00</color> <!-- Pastel Amber -->
+    <color name="paleGoldenrod">#EEE8AA</color>
+    <color name="moccasin">#FFE4B5</color>
+    <color name="pastelYellow">#FFFF99</color> <!-- Pastel Yellow -->
+    <color name="paleYellow">#FFFFE0</color>
+
+    <!-- Additional Orange Shades -->
+    <color name="peachPuff">#FFDAB9</color>
+    <color name="lightSalmon">#FFA07A</color>
+    <color name="coral">#F08080</color>
+    <color name="bisque">#FFE4C4</color>
+    <color name="lightCoral">#F08080</color>
+    <color name="tomato">#FF6347</color>
+    <color name="pastelApricot">#FBCEB1</color> <!-- Pastel Apricot -->
+    <color name="pastelOrange">#FFB347</color> <!-- Pastel Orange -->
+    <color name="lightPeach">#FFDAB9</color> <!-- Light Peach -->
+
+    <!-- Additional Shades of Gray and Brown -->
+    <color name="lightGray">#D3D3D3</color> <!-- Light Gray -->
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="pastelGray">#CFCFC4</color> <!-- Pastel Gray -->
+    <color name="beige">#F5F5DC</color>
+    <color name="ivory">#FFFFF0</color>
+    <color name="lightBeige">#F2E5D2</color> <!-- Light Beige -->
+    <color name="pastelBrown">#836953</color> <!-- Pastel Brown -->
+    <color name="paleBrown">#987654</color> <!-- Pale Brown -->
+    <color name="lightKhaki">#F0E68C</color> <!-- Light Khaki -->
+
+
+    <color name="anemoColor">#00D4B5</color> <!-- Teal color for Anemo -->
+    <color name="anemoLightColor">#A4F9E1</color> <!-- Lighter variant of Anemo -->
+
+    <!-- Geo (Earth) - Yellow / Gold -->
+    <color name="geoColor">#FFC300</color> <!-- Gold color for Geo -->
+    <color name="geoLightColor">#FFE680</color> <!-- Lighter variant of Geo -->
+
+    <!-- Pyro (Fire) - Red / Orange -->
+    <color name="pyroColor">#FF5733</color> <!-- Red/Orange for Pyro -->
+    <color name="pyroLightColor">#FFA07A</color> <!-- Lighter variant of Pyro -->
+
+    <!-- Hydro (Water) - Blue / Aqua -->
+    <color name="hydroColor">#00BFFF</color> <!-- Aqua color for Hydro -->
+    <color name="hydroLightColor">#ADD8E6</color> <!-- Lighter variant of Hydro -->
+
+    <!-- Electro (Lightning) - Purple -->
+    <color name="electroColor">#8A2BE2</color> <!-- Purple for Electro -->
+    <color name="electroLightColor">#D8BFD8</color> <!-- Lighter variant of Electro -->
+
+    <!-- Cryo (Ice) - Light Blue / White -->
+    <color name="cryoColor">#B0E0E6</color> <!-- Light Blue for Cryo -->
+    <color name="cryoLightColor">#E0FFFF</color> <!-- Lighter variant of Cryo -->
+
+    <!-- Dendro (Nature) - Green -->
+    <color name="dendroColor">#32CD32</color> <!-- Green color for Dendro -->
+    <color name="dendroLightColor">#98FB98</color> <!-- Lighter variant of Dendro -->
+
+    <color name="mushroom_background">#FDEDE0</color>
+    <color name="mushroom_text">#963C2E</color>
+
+    <color name="grey">#B0B0B0</color>
+
+    <color name="offwhite">#f8f4ec</color>
+
+    <color name="transparent">#80000000</color>
+</resources>

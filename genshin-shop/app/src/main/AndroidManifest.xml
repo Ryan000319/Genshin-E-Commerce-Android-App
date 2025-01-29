@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".MyApp"
+        android:networkSecurityConfig="@xml/network_securit_config"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Genshin_Shop"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".StartRegisterActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".StartLoginActivity"
+            android:exported="true" />
+
+        <!-- Admin Home Activity -->
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="true" />
+
+        <!-- User Home Activity -->
+        <activity
+            android:name=".UserHomeFragment"
+            android:exported="true" />
+
+        <activity
+            android:name=".AdminAddProductActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".AdminManageProductsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".AdminEditProductActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".AdminManageOrdersActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".AdminOrderDetailActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".AdminManageAdvertisementsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".UserProfileFragment"
+            android:exported="true" />
+
+        <activity
+            android:name=".UserEditProfileActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".UserOrderDetailActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ProductDetailActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".UserCheckoutActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".UserCartFragment"
+            android:exported="true" />
+
+        <activity
+            android:name=".AdminViewStoreAnalyticsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".UserOrderConfirmationActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".UserSearchResultsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".AdminManageCharactersActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".MyNotificationService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync"/>
+
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+
+
+</manifest>

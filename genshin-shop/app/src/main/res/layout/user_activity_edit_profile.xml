@@ -1,0 +1,218 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_home_12"
+    android:padding="16dp">
+
+    <!-- Card for Avatar Selection -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/avatarCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card_background"
+        android:padding="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Avatar Preview -->
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="Avatar Preview"
+            android:src="@drawable/user_avatar_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Avatar Selection Title -->
+        <TextView
+            android:id="@+id/selectAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Select Avatar"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/avatarImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Horizontal Scrollable Avatar Picker -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/avatarRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rating_background"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/selectAvatar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Card for User Details -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detailsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/card_background"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/avatarCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Personal Info Title -->
+        <TextView
+            android:id="@+id/personal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Username Input -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/username_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            app:layout_constraintTop_toBottomOf="@id/personal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/iconUsername"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:hint="Enter Username"
+                android:textSize="16sp"
+                android:paddingStart="16dp"
+                android:gravity="center|start"
+                android:textColor="@color/black"
+                android:background="@drawable/rating_background"
+                app:layout_constraintStart_toEndOf="@id/iconUsername"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Address Input -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/address_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            app:layout_constraintTop_toBottomOf="@id/username_section"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/iconAddress"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_address"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <EditText
+                android:id="@+id/addressEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/rating_background"
+                android:paddingStart="16dp"
+                android:gravity="center|start"
+                android:hint="Enter Address"
+                android:minLines="3"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/iconAddress"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Phone Input -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/phone_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp"
+            app:layout_constraintTop_toBottomOf="@id/address_section"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/iconPhone"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:hint="Enter Phone"
+                android:textSize="16sp"
+                android:paddingStart="16dp"
+                android:gravity="center|start"
+                android:textColor="@color/black"
+                android:background="@drawable/rating_background"
+                app:layout_constraintStart_toEndOf="@id/iconPhone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Save Changes Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveButton"
+            app:cornerRadius="12dp"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:paddingVertical="12dp"
+            android:text="Save Changes"
+            android:textSize="12sp"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/phone_section"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

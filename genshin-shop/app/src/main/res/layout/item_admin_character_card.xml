@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/card_background">
+
+    <!-- Sticker Image -->
+    <ImageView
+        android:id="@+id/character_sticker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ganyu_sticker"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Character Name -->
+    <TextView
+        android:id="@+id/character_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Character Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <!-- Delete Button -->
+    <TextView
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="@android:color/holo_red_dark"
+        android:padding="8dp" />
+</LinearLayout>
